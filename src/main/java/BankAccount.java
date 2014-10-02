@@ -9,11 +9,21 @@ public class BankAccount {
   }
  
   public double debit(double amount) {
+
+   // test code 1
+   if (balance > amount) {
+    amount = balance;
+   }
+   // test code 2
+   if (balance == amount) {
+    amount = balance;
+   } 
+
    if (balance < amount) {
     amount = balance;
     //amount = balanceXXX; // created error
    }
- 
+
    balance -= amount;
    return amount;
   }
