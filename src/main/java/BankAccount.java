@@ -1,20 +1,20 @@
-package ca.uwo.csd.cs2212.USERNAME;
+//package ca.uwo.csd.cs2212.USERNAME;
  
 public class BankAccount {
  
-private double balance;
+  private double balance;
  
-public BankAccount(double balance) {
-  this.balance = balance;
-}
- 
-public double debit(double amount) {
-  if (balance < amount) {
-   amount = balance;
+  public BankAccount(double balance) {
+   this.balance = balance;
   }
  
- balance -= amount;
- return amount;
-}
+  public double debit(double amount) {
+   if (balance < amount) {
+    amount = balance;
+   }
+ 
+   balance -= amount;
+   return amount;
+  }
  
 }
