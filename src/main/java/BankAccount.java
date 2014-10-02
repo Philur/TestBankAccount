@@ -8,16 +8,17 @@ public class BankAccount {
    this.balance = balance;
   }
  
-  public double debit(double amount) {
+  public double kredit(double amount) {
+   balance += amount;
+   return amount;
+  }
+ 
+   public double debit(double amount) {
 
    // test code 1
    if (balance > amount) {
-    amount = balance;
+    //amount = balance;
    }
-   // test code 2
-   if (balance == amount) {
-    amount = balance;
-   } 
 
    if (balance < amount) {
     amount = balance;
