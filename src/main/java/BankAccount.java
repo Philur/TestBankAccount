@@ -9,6 +9,11 @@ public class BankAccount {
   }
  
   public double kredit(double amount) {
+   // Felhantering för att klara av kredit av 0 eller - värden
+   if (amount <= 0) {
+   	amount = balance;
+   }
+   
    balance += amount;
    return amount;
   }
