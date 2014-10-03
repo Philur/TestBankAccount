@@ -39,6 +39,6 @@ public class TestBankAccount {
 		BankAccount account = new BankAccount(10);
 		double amount = account.kredit(0);
 		Assert.assertEquals(10.0, amount);
-}
+	}
 
 }
