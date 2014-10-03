@@ -28,17 +28,24 @@ public class TestBankAccount {
 	}
 	
 	@Test
-		public void testKreditWithFunds() {
+	public void testKreditWithFunds() {
 		BankAccount account = new BankAccount(0);
 		double amount = account.kredit(10);
 		Assert.assertEquals(10.0, amount);
 	}
 		
 	@Test
-		public void testKreditWithNoFunds() {
+	public void testKreditWithNoFunds() {
 		BankAccount account = new BankAccount(10);
 		double amount = account.kredit(0);
 		Assert.assertEquals(10.0, amount);
+	}
+
+	@Test
+	public void testKreditWithNegativeFunds() {
+		BankAccount account = new BankAccount(10);
+		double amount = account.kredit(-5);
+		Assert.assertEquals(5.0, amount);
 	}
 
 }
