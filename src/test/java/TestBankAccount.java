@@ -26,4 +26,18 @@ public class TestBankAccount {
 		double amount = account.debit(11);
 		Assert.assertEquals(0.0, amount);
 	}
+	
+	@Test
+		public void testKreditWithFunds() {
+		BankAccount account = new BankAccount(0);
+		double amount = account.kredit(10);
+		Assert.assertEquals(10.0, amount);
+		
+	@Test
+		public void testKreditWithNoFunds() {
+		BankAccount account = new BankAccount(10);
+		double amount = account.kredit(0);
+		Assert.assertEquals(10.0, amount);
+}
+
 }
