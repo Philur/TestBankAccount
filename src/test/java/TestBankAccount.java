@@ -14,6 +14,13 @@ public class TestBankAccount {
 	}
 	
 	@Test
+	public void testDebitWithSufficientFunds2() {
+		BankAccount account = new BankAccount(10);
+		double amount = account.debit(3.33);
+		Assert.assertEquals(6.67, amount);
+	}
+	
+	@Test
 	public void testDebitWithInsSufficientFunds() {
 		BankAccount account = new BankAccount(10);
 		double amount = account.debit(11);
