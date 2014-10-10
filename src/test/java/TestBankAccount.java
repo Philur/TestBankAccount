@@ -71,7 +71,7 @@ public class TestBankAccount {
 	
 	@Test
 	public void testKreditWithNegativeFunds3() {
-		BankAccount account = new BankAccount(6);
+		BankAccount account = new BankAccount(10);
 		double amount = account.kredit(-5.50);
 		Assert.assertEquals(10.0, amount);
 	}
