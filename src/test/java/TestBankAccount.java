@@ -89,5 +89,25 @@ public class TestBankAccount {
 		double amount = account.kredit(-5.50);
 		Assert.assertEquals(10.0, amount);
 	}
+	@Test
+	public void testDebitWithSufficientFunds() {
+		BankAccount account = new BankAccount(10);
+		double amount = account.debit(5);
+		Assert.assertEquals(5.0, amount);
+	}
+	
+	@Test
+	public void testDebitWithSufficientFunds3() {
+		BankAccount account = new BankAccount(10);
+		double amount = account.debit(3.33);
+		Assert.assertEquals(3.33, amount);
+	}
+	
+	@Test
+	public void testDebitWithInsSufficientFunds()4 {
+		BankAccount account = new BankAccount(10);
+		double amount = account.debit(11);
+		Assert.assertEquals(10.0, amount);
+	}
 
 }
