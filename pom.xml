@@ -49,7 +49,7 @@
       <findbugsXmlWithMessages>true</findbugsXmlWithMessages>
       <xmlOutput>true</xmlOutput>
    </configuration>
-</plugin
+</plugin>
 	</plugins>
 </build>
 
