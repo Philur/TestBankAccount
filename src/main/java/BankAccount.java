@@ -27,7 +27,7 @@ public class BankAccount {
 
    if (balance < amount) {
     amount = balance;
-    amount = balanceXXX; // created error
+    //amount = balanceXXX; // created error
    }
 
    balance -= amount;
