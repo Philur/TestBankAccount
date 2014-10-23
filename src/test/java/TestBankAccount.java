@@ -105,7 +105,7 @@ public class TestBankAccount {
 	}
 	@Test
 	public void testDebitWithInsSufficientFunds5() {
-		BankAccount account = new BankAccount(10);
+		BankAccount account = new BankAccount(1000000);
 		double amount = account.debit(11111);
 		Assert.assertEquals(10.0, amount);
 	}
